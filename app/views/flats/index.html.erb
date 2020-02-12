@@ -1,0 +1,28 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12">
+      <h1>All our Flats</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="d-flex inline flex-wrap">
+      <% @flats.each do |flat| %>
+      <div class="card" style="width: 23rem;">
+        <img class="card-img-top" src="https://loremflickr.com/g/320/240/cities" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><%= flat.name %></h5>
+          <p class="card-text"><%= flat.address %></p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">More Infos</a>
+          <a href="#" class="card-link">Edit</a>
+          <a href="#" class="card-link">Remove</a>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
